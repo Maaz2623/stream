@@ -5,7 +5,7 @@ export default async function Page({ params }) {
   const movie = await getMovie(params.slug);
 
   return (
-    <div className="h-auto w-full mt-10">
+    <div className="h-auto w-full mt-20 ">
       <div className="flex px-5 justify-center items-center">
         <h1 className="text-3xl font-semibold">{movie.title}</h1>
       </div>
