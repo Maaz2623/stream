@@ -1,14 +1,8 @@
-import { SignOutButton, SignedIn, UserButton } from "@clerk/nextjs";
 import Image from "next/image";
 import Link from "next/link";
-import { dark } from "@clerk/themes";
-import { Input } from "../ui/input";
 import "@/app/globals.css";
-import { currentUser } from "@clerk/nextjs";
 
 const Topbar = async  () => {
-
-  const user = await currentUser()
 
   return (
     <nav className="flex justify-between items-center px-3 py-3 z-50 bg-gray-900 fixed top-0 left-0 w-full">
@@ -18,12 +12,7 @@ const Topbar = async  () => {
         <p>Enjoy Kanka!!</p>
       </div>
       <div className="mr-2 flex justify-center items-center gap-3">
-        <p>{`${user.firstName} ${user.lastName}`}</p>
-        <UserButton
-          appearance={{
-            baseTheme: dark,
-          }}
-        />
+        <p>Umme Ruman</p>
       </div>
     </nav>
   );

@@ -45,17 +45,12 @@
 //   );
 // }
 
-import { currentUser } from "@clerk/nextjs";
 import { redirect } from "next/navigation";
-import Movies from "@/components/shared/Movies";
 import { connectToDB } from "@/lib/mongoose";
 import { fetchMovies } from "@/lib/actions/movie";
 import Link from "next/link";
 
 export default async function Page() {
-  const user = await currentUser();
-
-  if (!user) redirect("/sign-in");
 
 
   const movies = await fetchMovies()
