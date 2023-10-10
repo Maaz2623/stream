@@ -1,7 +1,7 @@
 import Movie from "../models/movie";
 import { connectToDB } from "../mongoose";
 
-export const revalidate = 1
+export const revalidate = 0
 
 export const fetchMovies = async () => {
   try {
