@@ -16,6 +16,9 @@ module.exports = {
       },
     },
     extend: {
+      backgroundImage: {
+        'primary': "url('/bg.jpg')"
+      },
       keyframes: {
         "accordion-down": {
           from: { height: 0 },

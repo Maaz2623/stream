@@ -7,7 +7,7 @@ const poppins = Poppins({weight: "400", subsets: ["latin"]})
 export default function RootLayout({ children }){
     return (
             <html lang="en">
-                <body className={`${poppins.className} bg-gray-800 text-white`}>
+                <body className={`${poppins.className} bg-slate-800 text-white`}>
                     <Topbar />
                     {children}
                 </body>
