@@ -15,7 +15,7 @@ export default async function Page() {
       <div className="mt-20 mb-10 text-2xl flex items-center justify-center font-bold h-[50px]">
         Recently Uploaded
       </div>
-      <div className="h-auto w-full p-3 grid grid-flow-row sm:grid-cols-1 md:grid-cols-2 gap-5 px-5">
+      <div className="h-auto w-full p-3 grid grid-flow-row sm:grid-cols-1 md:grid-cols-5 gap-5 px-5">
         {movies.map((movie) => {
 
           const year = movie.releaseDate.split('/')[2]
