@@ -30,7 +30,7 @@ export default async function Page() {
                 />
                 <div>
                   <p>{movie.title}</p>
-                  <p className="text-gray-400 text-sm">{`}`}</p>
+                  <p className="text-gray-400 text-sm">{year}</p>
                 </div>
               </div>
             </Link>
