@@ -1,6 +1,6 @@
 import "../globals.css";
 import {Poppins} from 'next/font/google';
-import Topbar from "@/components/shared/Topbar";
+import Topbar from "../../components/shared/Topbar";
 
 const poppins = Poppins({weight: "400", subsets: ["latin"]})
 
